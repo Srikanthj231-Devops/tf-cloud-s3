@@ -20,5 +20,5 @@ resource "random_id" "rand_id" {
 }
 
 resource "aws_s3_bucket" "main" {
-  bucket = "tf-${terraform.workspace}${random_id.rand_id.hex}"
+  bucket = "tf-${random_id.rand_id.hex}"
 }
