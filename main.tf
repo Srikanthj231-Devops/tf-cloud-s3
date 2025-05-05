@@ -16,7 +16,7 @@ provider "aws" {
 }
 
 resource "random_id" "rand_id" {
-  byte_length = 6
+  byte_length = 10
 }
 
 resource "aws_s3_bucket" "main" {
